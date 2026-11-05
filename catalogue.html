@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kaïra Boutique : bayas de taille pour femmes, perles lavande et détails argentés. Commandez facilement sur WhatsApp.">
+<meta name="theme-color" content="#2d1b4e">
+<title>Catalogue | Kaïra Boutique</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/products.js" defer></script><script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="section-pad catalog-main">
+<div class="catalog-intro"><p class="eyebrow">LA SÉLECTION KAÏRA</p><h1>Notre <span>catalogue</span></h1><p>Découvrez nos bayas et accessoires délicats.</p></div>
+<div class="catalog-tools"><input id="product-search" type="search" placeholder="Rechercher un article…" aria-label="Rechercher un article"><select id="category-filter" aria-label="Filtrer par catégorie"></select>
+<select id="sort-order" aria-label="Classer les produits"><option value="featured">Coups de cœur</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option><option value="name">Nom A → Z</option></select></div>
+<div class="product-grid" id="catalog-products"></div>
+<p class="catalog-note" id="catalog-note" aria-live="polite"></p>
+<section class="size-guide reveal" id="tailles"><h2>Guide des tailles</h2><p>Repérez votre mesure en centimètres et indiquez la taille correspondante lors de votre commande.</p>
+<div class="size-wrap"><table class="size-table"><thead><tr><th scope="col">Taille</th><th scope="col" id="size-head">Mesure (cm)</th></tr></thead><tbody id="size-body"></tbody></table></div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

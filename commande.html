@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kaïra Boutique : bayas de taille pour femmes, perles lavande et détails argentés. Commandez facilement sur WhatsApp.">
+<meta name="theme-color" content="#2d1b4e">
+<title>Passer la commande | Kaïra Boutique</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/products.js" defer></script><script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="section-pad cart-main"><div class="catalog-intro"><p class="eyebrow">KAÏRA BOUTIQUE</p><h1>Votre <span>commande</span></h1><p>Renseignez vos informations : votre message de commande sera préparé dans WhatsApp.</p></div>
+<div id="order-root" class="order-grid">
+  <form id="order-form" class="order-form" novalidate>
+    <label>Taille * <select name="taille" required></select></label>
+    <p class="fine size-link"><a href="catalogue.html#tailles">Voir le guide des tailles</a></p>
+    <label>Nom complet *<input name="nom" autocomplete="name" required></label>
+    <label>Numéro de téléphone *<input name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="07 00 00 00 00" required></label>
+    <label>Commune *<input name="commune" required></label>
+    <label>Adresse ou lieu de livraison *<input name="adresse" required></label>
+    <label>Indication complémentaire<textarea name="note" rows="3" placeholder="Point de repère, horaire souhaité…"></textarea></label>
+    <p class="form-error" id="form-error" role="alert"></p>
+    <button class="button button-wa" type="submit">Confirmer ma commande sur WhatsApp</button>
+    <p class="fine">Votre commande n’est confirmée qu’après échange avec la boutique sur WhatsApp. Aucun paiement n’est demandé sur ce site.</p>
+  </form>
+  <aside class="cart-summary" id="order-summary" aria-live="polite"></aside>
+</div></main>
+<div id="site-footer"></div>
+</body>
+</html>
